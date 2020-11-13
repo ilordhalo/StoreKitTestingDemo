@@ -16,6 +16,7 @@
 		775D5B46255E72A3003874F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B45255E72A3003874F8 /* main.m */; };
 		775D5B50255E72A4003874F8 /* StoreKitTestingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B4F255E72A4003874F8 /* StoreKitTestingDemoTests.m */; };
 		775D5B5B255E72A4003874F8 /* StoreKitTestingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B5A255E72A4003874F8 /* StoreKitTestingDemoUITests.m */; };
+		775D5B71255E766C003874F8 /* ILDProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B70255E766C003874F8 /* ILDProductView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,10 @@
 		775D5B56255E72A4003874F8 /* StoreKitTestingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreKitTestingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		775D5B5A255E72A4003874F8 /* StoreKitTestingDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreKitTestingDemoUITests.m; sourceTree = "<group>"; };
 		775D5B5C255E72A4003874F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775D5B6B255E72EB003874F8 /* IAPConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = IAPConfiguration.storekit; sourceTree = "<group>"; };
+		775D5B6F255E766C003874F8 /* ILDProductView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDProductView.h; sourceTree = "<group>"; };
+		775D5B70255E766C003874F8 /* ILDProductView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDProductView.m; sourceTree = "<group>"; };
+		775D5B79255E99F5003874F8 /* StoreKitTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKitTest.framework; path = Developer/Library/Frameworks/StoreKitTest.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,7 @@
 				775D5B4E255E72A4003874F8 /* StoreKitTestingDemoTests */,
 				775D5B59255E72A4003874F8 /* StoreKitTestingDemoUITests */,
 				775D5B31255E72A1003874F8 /* Products */,
+				775D5B78255E99F4003874F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,11 +116,14 @@
 				775D5B37255E72A1003874F8 /* SceneDelegate.m */,
 				775D5B39255E72A1003874F8 /* ViewController.h */,
 				775D5B3A255E72A1003874F8 /* ViewController.m */,
+				775D5B6F255E766C003874F8 /* ILDProductView.h */,
+				775D5B70255E766C003874F8 /* ILDProductView.m */,
 				775D5B3C255E72A1003874F8 /* Main.storyboard */,
 				775D5B3F255E72A3003874F8 /* Assets.xcassets */,
 				775D5B41255E72A3003874F8 /* LaunchScreen.storyboard */,
 				775D5B44255E72A3003874F8 /* Info.plist */,
 				775D5B45255E72A3003874F8 /* main.m */,
+				775D5B6B255E72EB003874F8 /* IAPConfiguration.storekit */,
 			);
 			path = StoreKitTestingDemo;
 			sourceTree = "<group>";
@@ -135,6 +144,14 @@
 				775D5B5C255E72A4003874F8 /* Info.plist */,
 			);
 			path = StoreKitTestingDemoUITests;
+			sourceTree = "<group>";
+		};
+		775D5B78255E99F4003874F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				775D5B79255E99F5003874F8 /* StoreKitTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775D5B71255E766C003874F8 /* ILDProductView.m in Sources */,
 				775D5B3B255E72A1003874F8 /* ViewController.m in Sources */,
 				775D5B35255E72A1003874F8 /* AppDelegate.m in Sources */,
 				775D5B46255E72A3003874F8 /* main.m in Sources */,
@@ -447,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fuck.StoreKitTestingDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilord.StoreKitTestingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fuck.StoreKitTestingDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilord.StoreKitTestingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

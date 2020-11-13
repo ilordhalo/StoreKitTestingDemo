@@ -1,0 +1,50 @@
+{
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "C77A7F16",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.ilord.test.product0",
+      "referenceName" : "测试套餐0",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "87FFC97B",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.ilord.test.product1",
+      "referenceName" : "测试套餐1",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingIssuesEnabled" : true
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "subscriptionOffersKeyPair" : {
+    "id" : "E09DB4AB",
+    "privateKey" : "MF8CAQEEGENH0SLfp9+7JwhGxGC4WEIIV2AKguDikaAKBggqhkjOPQMBAaE0AzIA\nBLnPDnupp83AsGJJkhbJwZSGYwp+iYBbVqkrRaElEPDkr69yLZdFwoUm/u4gJXc9\n2g==",
+    "publicKey" : "MEkwEwYHKoZIzj0CAQYIKoZIzj0DAQEDMgAEuc8Oe6mnzcCwYkmSFsnBlIZjCn6J\ngFtWqStFoSUQ8OSvr3Itl0XChSb+7iAldz3a"
+  },
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}
