@@ -9,6 +9,8 @@
 
 @interface ViewController : UIViewController
 
+- (BOOL)test;
+
 
 @end
 

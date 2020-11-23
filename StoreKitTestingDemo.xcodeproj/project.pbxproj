@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7713993C256A6A06006C6376 /* ILDBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7713993B256A6A06006C6376 /* ILDBaseTests.m */; };
+		77139949256A6ADB006C6376 /* ILDIAPManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77139948256A6ADB006C6376 /* ILDIAPManagerTests.m */; };
+		77139952256A6BCA006C6376 /* ILDIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77139951256A6BCA006C6376 /* ILDIAPManager.m */; };
 		775D5B35255E72A1003874F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B34255E72A1003874F8 /* AppDelegate.m */; };
 		775D5B38255E72A1003874F8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B37255E72A1003874F8 /* SceneDelegate.m */; };
 		775D5B3B255E72A1003874F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B3A255E72A1003874F8 /* ViewController.m */; };
@@ -17,6 +20,8 @@
 		775D5B50255E72A4003874F8 /* StoreKitTestingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B4F255E72A4003874F8 /* StoreKitTestingDemoTests.m */; };
 		775D5B5B255E72A4003874F8 /* StoreKitTestingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B5A255E72A4003874F8 /* StoreKitTestingDemoUITests.m */; };
 		775D5B71255E766C003874F8 /* ILDProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B70255E766C003874F8 /* ILDProductView.m */; };
+		7777A9AB2566B35500FF3029 /* StoreKitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D278182566AD240075AC10 /* StoreKitTest.framework */; };
+		7777A9B32566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 7777A9B22566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7713993A256A6A06006C6376 /* ILDBaseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDBaseTests.h; sourceTree = "<group>"; };
+		7713993B256A6A06006C6376 /* ILDBaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDBaseTests.m; sourceTree = "<group>"; };
+		77139948256A6ADB006C6376 /* ILDIAPManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDIAPManagerTests.m; sourceTree = "<group>"; };
+		77139950256A6BCA006C6376 /* ILDIAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDIAPManager.h; sourceTree = "<group>"; };
+		77139951256A6BCA006C6376 /* ILDIAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDIAPManager.m; sourceTree = "<group>"; };
+		7758CC4B25666D0A00F78C79 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7758CC5025666D4800F78C79 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		775D5B30255E72A1003874F8 /* StoreKitTestingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreKitTestingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		775D5B33255E72A1003874F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		775D5B34255E72A1003874F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,7 +70,9 @@
 		775D5B6B255E72EB003874F8 /* IAPConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = IAPConfiguration.storekit; sourceTree = "<group>"; };
 		775D5B6F255E766C003874F8 /* ILDProductView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDProductView.h; sourceTree = "<group>"; };
 		775D5B70255E766C003874F8 /* ILDProductView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDProductView.m; sourceTree = "<group>"; };
-		775D5B79255E99F5003874F8 /* StoreKitTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKitTest.framework; path = Developer/Library/Frameworks/StoreKitTest.framework; sourceTree = SDKROOT; };
+		775D5B79255E99F5003874F8 /* StoreKitTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKitTest.framework; path = ../../../../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/Developer/Library/Frameworks/StoreKitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7777A9B22566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = IAPUnitTestConfiguration.storekit; sourceTree = "<group>"; };
+		77D278182566AD240075AC10 /* StoreKitTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKitTest.framework; path = Developer/Library/Frameworks/StoreKitTest.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7777A9AB2566B35500FF3029 /* StoreKitTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77139940256A6A0B006C6376 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7713993A256A6A06006C6376 /* ILDBaseTests.h */,
+				7713993B256A6A06006C6376 /* ILDBaseTests.m */,
+				77139948256A6ADB006C6376 /* ILDIAPManagerTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		775D5B27255E72A1003874F8 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +141,8 @@
 				775D5B37255E72A1003874F8 /* SceneDelegate.m */,
 				775D5B39255E72A1003874F8 /* ViewController.h */,
 				775D5B3A255E72A1003874F8 /* ViewController.m */,
+				77139950256A6BCA006C6376 /* ILDIAPManager.h */,
+				77139951256A6BCA006C6376 /* ILDIAPManager.m */,
 				775D5B6F255E766C003874F8 /* ILDProductView.h */,
 				775D5B70255E766C003874F8 /* ILDProductView.m */,
 				775D5B3C255E72A1003874F8 /* Main.storyboard */,
@@ -124,6 +151,8 @@
 				775D5B44255E72A3003874F8 /* Info.plist */,
 				775D5B45255E72A3003874F8 /* main.m */,
 				775D5B6B255E72EB003874F8 /* IAPConfiguration.storekit */,
+				7777A9B22566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit */,
+				77139940256A6A0B006C6376 /* Tests */,
 			);
 			path = StoreKitTestingDemo;
 			sourceTree = "<group>";
@@ -149,6 +178,9 @@
 		775D5B78255E99F4003874F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77D278182566AD240075AC10 /* StoreKitTest.framework */,
+				7758CC5025666D4800F78C79 /* XcodeKit.framework */,
+				7758CC4B25666D0A00F78C79 /* XCTest.framework */,
 				775D5B79255E99F5003874F8 /* StoreKitTest.framework */,
 			);
 			name = Frameworks;
@@ -266,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7777A9B32566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +318,7 @@
 			files = (
 				775D5B71255E766C003874F8 /* ILDProductView.m in Sources */,
 				775D5B3B255E72A1003874F8 /* ViewController.m in Sources */,
+				77139952256A6BCA006C6376 /* ILDIAPManager.m in Sources */,
 				775D5B35255E72A1003874F8 /* AppDelegate.m in Sources */,
 				775D5B46255E72A3003874F8 /* main.m in Sources */,
 				775D5B38255E72A1003874F8 /* SceneDelegate.m in Sources */,
@@ -295,7 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7713993C256A6A06006C6376 /* ILDBaseTests.m in Sources */,
 				775D5B50255E72A4003874F8 /* StoreKitTestingDemoTests.m in Sources */,
+				77139949256A6ADB006C6376 /* ILDIAPManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +496,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JTPEA4UU7;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = StoreKitTestingDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,6 +515,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JTPEA4UU7;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = StoreKitTestingDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,6 +533,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JTPEA4UU7;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = StoreKitTestingDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -512,6 +554,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JTPEA4UU7;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = StoreKitTestingDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JTPEA4UU7;
 				INFOPLIST_FILE = StoreKitTestingDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -547,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JTPEA4UU7;
 				INFOPLIST_FILE = StoreKitTestingDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

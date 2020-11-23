@@ -7,6 +7,10 @@
 
 #import <XCTest/XCTest.h>
 
+#import "ViewController.h"
+
+#import <StoreKitTest/StoreKitTest.h>
+
 @interface StoreKitTestingDemoTests : XCTestCase
 
 @end

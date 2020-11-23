@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 
+#import "ILDIAPManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[ILDIAPManager defaultManager] startService];
     return YES;
 }
 

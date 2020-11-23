@@ -10,8 +10,9 @@
 #import <StoreKit/StoreKit.h>
 
 #import "ILDProductView.h"
+#import "ILDIAPManager.h"
 
-@interface ViewController () <SKProductsRequestDelegate, ILDProductViewDelegate, SKPaymentTransactionObserver>
+@interface ViewController () <SKProductsRequestDelegate, ILDProductViewDelegate>
 
 @property (nonatomic, strong) SKProductsRequest *productsRequest;
 
@@ -19,16 +20,14 @@
 
 @implementation ViewController
 
-- (void)dealloc
+- (BOOL)test
 {
-    [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
+    return YES;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     
     [self refreshProducts];
     
@@ -69,46 +68,7 @@
 {
     NSLog(@"tap: %@", product.localizedTitle);
     
-    SKMutablePayment *payment = [SKMutablePayment paymentWithProduct:product];
-    payment.applicationUsername = [NSUUID UUID].UUIDString;
-    [[SKPaymentQueue defaultQueue] addPayment:payment];
-}
-
-+ (NSString *)receipt
-{
-    NSData *receiptData = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] appStoreReceiptURL]];
-    return [receiptData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
-}
-
-- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions
-{
-    [transactions enumerateObjectsUsingBlock:^(SKPaymentTransaction * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        switch (obj.transactionState) {
-            case SKPaymentTransactionStateFailed:
-                NSLog(@"transaction id:%@ failed; reason: %@", obj.transactionIdentifier, obj.error.description);
-                break;
-            case SKPaymentTransactionStateDeferred:
-                NSLog(@"transaction id:%@ deferred; reason: %@", obj.transactionIdentifier, obj.error.description);
-                break;
-            case SKPaymentTransactionStatePurchasing:
-                NSLog(@"transaction id:%@ purchasing;", obj.transactionIdentifier);
-                break;
-            case SKPaymentTransactionStatePurchased:
-            {
-                NSLog(@"transaction id:%@ purchased;", obj.transactionIdentifier);
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    NSLog(@"transaction id:%@ finish;", obj.transactionIdentifier);
-                    [[SKPaymentQueue defaultQueue] finishTransaction:obj];
-                });
-                break;
-            }
-            case SKPaymentTransactionStateRestored:
-                NSLog(@"transaction id:%@ restored;", obj.transactionIdentifier);
-                break;
-            default:
-                break;
-        }
-    }];
+    [[ILDIAPManager defaultManager] buyProduct:product applicationUsername:@"test_user"];
 }
 
 @end
