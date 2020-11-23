@@ -10,7 +10,7 @@
 #import <StoreKit/StoreKit.h>
 
 #import "ILDProductView.h"
-#import "ILDIAPManager.h"
+#import "ILDServiceLocator+IAPService.h"
 
 @interface ViewController () <SKProductsRequestDelegate, ILDProductViewDelegate>
 
@@ -68,7 +68,7 @@
 {
     NSLog(@"tap: %@", product.localizedTitle);
     
-    [[ILDIAPManager defaultManager] buyProduct:product applicationUsername:@"test_user"];
+    [[ILDServiceLocator iapService] buyProduct:product applicationUsername:@"test_user"];
 }
 
 @end

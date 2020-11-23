@@ -19,6 +19,9 @@
 		775D5B50255E72A4003874F8 /* StoreKitTestingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B4F255E72A4003874F8 /* StoreKitTestingDemoTests.m */; };
 		775D5B5B255E72A4003874F8 /* StoreKitTestingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B5A255E72A4003874F8 /* StoreKitTestingDemoUITests.m */; };
 		775D5B71255E766C003874F8 /* ILDProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B70255E766C003874F8 /* ILDProductView.m */; };
+		776FFF3E256BE43C003DB370 /* ILDServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FFF3D256BE43C003DB370 /* ILDServiceLocator.m */; };
+		776FFF44256BE48B003DB370 /* ILDServiceLocator+IAPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FFF43256BE48B003DB370 /* ILDServiceLocator+IAPService.m */; };
+		776FFF4A256BE4FD003DB370 /* ILDIAPServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 776FFF49256BE4FD003DB370 /* ILDIAPServiceImpl.m */; };
 		7777A9AB2566B35500FF3029 /* StoreKitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D278182566AD240075AC10 /* StoreKitTest.framework */; };
 		7777A9B32566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 7777A9B22566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit */; };
 /* End PBXBuildFile section */
@@ -68,6 +71,13 @@
 		775D5B6F255E766C003874F8 /* ILDProductView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDProductView.h; sourceTree = "<group>"; };
 		775D5B70255E766C003874F8 /* ILDProductView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDProductView.m; sourceTree = "<group>"; };
 		775D5B79255E99F5003874F8 /* StoreKitTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKitTest.framework; path = ../../../../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/Developer/Library/Frameworks/StoreKitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		776FFF33256BE2AC003DB370 /* ILDIAPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDIAPService.h; sourceTree = "<group>"; };
+		776FFF3C256BE43C003DB370 /* ILDServiceLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDServiceLocator.h; sourceTree = "<group>"; };
+		776FFF3D256BE43C003DB370 /* ILDServiceLocator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDServiceLocator.m; sourceTree = "<group>"; };
+		776FFF42256BE48B003DB370 /* ILDServiceLocator+IAPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ILDServiceLocator+IAPService.h"; sourceTree = "<group>"; };
+		776FFF43256BE48B003DB370 /* ILDServiceLocator+IAPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ILDServiceLocator+IAPService.m"; sourceTree = "<group>"; };
+		776FFF48256BE4FD003DB370 /* ILDIAPServiceImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDIAPServiceImpl.h; sourceTree = "<group>"; };
+		776FFF49256BE4FD003DB370 /* ILDIAPServiceImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDIAPServiceImpl.m; sourceTree = "<group>"; };
 		7777A9B22566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = IAPUnitTestConfiguration.storekit; sourceTree = "<group>"; };
 		77D278182566AD240075AC10 /* StoreKitTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKitTest.framework; path = Developer/Library/Frameworks/StoreKitTest.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -135,12 +145,9 @@
 				775D5B34255E72A1003874F8 /* AppDelegate.m */,
 				775D5B36255E72A1003874F8 /* SceneDelegate.h */,
 				775D5B37255E72A1003874F8 /* SceneDelegate.m */,
-				775D5B39255E72A1003874F8 /* ViewController.h */,
-				775D5B3A255E72A1003874F8 /* ViewController.m */,
-				77139950256A6BCA006C6376 /* ILDIAPManager.h */,
-				77139951256A6BCA006C6376 /* ILDIAPManager.m */,
-				775D5B6F255E766C003874F8 /* ILDProductView.h */,
-				775D5B70255E766C003874F8 /* ILDProductView.m */,
+				776FFF4E256BE519003DB370 /* Views */,
+				776FFF56256BE53E003DB370 /* ServiceImpl */,
+				776FFF52256BE534003DB370 /* Services */,
 				775D5B3C255E72A1003874F8 /* Main.storyboard */,
 				775D5B3F255E72A3003874F8 /* Assets.xcassets */,
 				775D5B41255E72A3003874F8 /* LaunchScreen.storyboard */,
@@ -179,6 +186,40 @@
 				775D5B79255E99F5003874F8 /* StoreKitTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		776FFF4E256BE519003DB370 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				775D5B39255E72A1003874F8 /* ViewController.h */,
+				775D5B3A255E72A1003874F8 /* ViewController.m */,
+				775D5B6F255E766C003874F8 /* ILDProductView.h */,
+				775D5B70255E766C003874F8 /* ILDProductView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		776FFF52256BE534003DB370 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				776FFF3C256BE43C003DB370 /* ILDServiceLocator.h */,
+				776FFF3D256BE43C003DB370 /* ILDServiceLocator.m */,
+				776FFF33256BE2AC003DB370 /* ILDIAPService.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		776FFF56256BE53E003DB370 /* ServiceImpl */ = {
+			isa = PBXGroup;
+			children = (
+				77139950256A6BCA006C6376 /* ILDIAPManager.h */,
+				77139951256A6BCA006C6376 /* ILDIAPManager.m */,
+				776FFF42256BE48B003DB370 /* ILDServiceLocator+IAPService.h */,
+				776FFF43256BE48B003DB370 /* ILDServiceLocator+IAPService.m */,
+				776FFF48256BE4FD003DB370 /* ILDIAPServiceImpl.h */,
+				776FFF49256BE4FD003DB370 /* ILDIAPServiceImpl.m */,
+			);
+			path = ServiceImpl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +357,10 @@
 				77139952256A6BCA006C6376 /* ILDIAPManager.m in Sources */,
 				775D5B35255E72A1003874F8 /* AppDelegate.m in Sources */,
 				775D5B46255E72A3003874F8 /* main.m in Sources */,
+				776FFF44256BE48B003DB370 /* ILDServiceLocator+IAPService.m in Sources */,
 				775D5B38255E72A1003874F8 /* SceneDelegate.m in Sources */,
+				776FFF4A256BE4FD003DB370 /* ILDIAPServiceImpl.m in Sources */,
+				776FFF3E256BE43C003DB370 /* ILDServiceLocator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
