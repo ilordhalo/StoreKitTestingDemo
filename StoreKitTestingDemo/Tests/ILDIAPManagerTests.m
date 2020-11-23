@@ -6,8 +6,8 @@
 //
 
 #import <StoreKitTest/StoreKitTest.h>
+#import <XCTest/XCTest.h>
 
-#import "ILDBaseTests.h"
 #import "ILDIAPManager.h"
 
 static NSString *const ILDIAPManagerTestMainProgressCaseKey = @"main progress";
@@ -33,10 +33,12 @@ static NSString *const ILDIAPManagerTestFailProductID = @"com.ilord.utest.produc
 
 @end
 
-@interface ILDIAPManagerTests : ILDBaseTests <ILDIAPDelegate>
+@interface ILDIAPManagerTests : XCTestCase <ILDIAPDelegate>
 
 @property (nonatomic, strong) ILDIAPManagerTestCase *testingCase;
 @property (nonatomic, strong) XCTestExpectation *setUpExpectation;
+
+@property (nonatomic, assign) NSTimeInterval limitDuraion;
 
 @property (nonatomic, strong) NSMutableArray *products;
 

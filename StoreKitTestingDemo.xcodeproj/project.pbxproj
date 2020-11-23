@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7713993C256A6A06006C6376 /* ILDBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7713993B256A6A06006C6376 /* ILDBaseTests.m */; };
 		77139949256A6ADB006C6376 /* ILDIAPManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77139948256A6ADB006C6376 /* ILDIAPManagerTests.m */; };
 		77139952256A6BCA006C6376 /* ILDIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77139951256A6BCA006C6376 /* ILDIAPManager.m */; };
 		775D5B35255E72A1003874F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 775D5B34255E72A1003874F8 /* AppDelegate.m */; };
@@ -42,8 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7713993A256A6A06006C6376 /* ILDBaseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDBaseTests.h; sourceTree = "<group>"; };
-		7713993B256A6A06006C6376 /* ILDBaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDBaseTests.m; sourceTree = "<group>"; };
 		77139948256A6ADB006C6376 /* ILDIAPManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDIAPManagerTests.m; sourceTree = "<group>"; };
 		77139950256A6BCA006C6376 /* ILDIAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILDIAPManager.h; sourceTree = "<group>"; };
 		77139951256A6BCA006C6376 /* ILDIAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILDIAPManager.m; sourceTree = "<group>"; };
@@ -104,8 +101,7 @@
 		77139940256A6A0B006C6376 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				7713993A256A6A06006C6376 /* ILDBaseTests.h */,
-				7713993B256A6A06006C6376 /* ILDBaseTests.m */,
+				7777A9B22566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit */,
 				77139948256A6ADB006C6376 /* ILDIAPManagerTests.m */,
 			);
 			path = Tests;
@@ -151,7 +147,6 @@
 				775D5B44255E72A3003874F8 /* Info.plist */,
 				775D5B45255E72A3003874F8 /* main.m */,
 				775D5B6B255E72EB003874F8 /* IAPConfiguration.storekit */,
-				7777A9B22566B4BA00FF3029 /* IAPUnitTestConfiguration.storekit */,
 				77139940256A6A0B006C6376 /* Tests */,
 			);
 			path = StoreKitTestingDemo;
@@ -329,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7713993C256A6A06006C6376 /* ILDBaseTests.m in Sources */,
 				775D5B50255E72A4003874F8 /* StoreKitTestingDemoTests.m in Sources */,
 				77139949256A6ADB006C6376 /* ILDIAPManagerTests.m in Sources */,
 			);
