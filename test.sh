@@ -1,0 +1,1 @@
+xcodebuild test -project StoreKitTestingDemo.xcodeproj -scheme StoreKitTestingDemo -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.2'
